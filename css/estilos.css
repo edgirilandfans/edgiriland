@@ -9,6 +9,30 @@
 	box-sizing: border-box;
 }
 
+.grafico {
+	position: relative; /* IE is dumb */
+	width: 400px;
+	border: 1px solid var(--rojo);
+	padding: 4px;
+	margin-left: 2%;
+}
+
+.grafico .barra {
+	display: block;
+	position: relative;
+	background: var(--rojo);
+	color: #FFF;
+	height: 2em;
+	line-height: 2em;
+	padding-left: 2%;
+}
+
+.grafico .barra span {
+	position: absolute; left: 1em;
+	padding-left: 2%;
+}
+
+
 body {
 	background: var(--fondo);
 	font-family: 'Open Sans', sans-serif;
@@ -17,6 +41,12 @@ body {
 .contenedor {
 	width: 90%;
 	margin: auto;
+}
+hr{
+	color:#FFF;
+}
+ul {
+	padding-left: 2%;
 }
 
 header {
@@ -52,12 +82,92 @@ header nav a.activo {
 	font-size: 16px;
 	min-height: 40.62em;
 	color: #fff;
-	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/backdrop.jpg);
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/principal.png);
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
 	display: flex;
 	align-items: end;
+}
+
+.pelicula-mental {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/mental.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-fisico {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/fisico.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-nutricion {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/nutricion.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-emprendimiento {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/emprendimiento.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-onlyfans {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/only.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.titulo-pel {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.descripcion-pel {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.contenedor-pel {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+	width: 90%;
 }
 
 .pelicula-principal .contenedor {
@@ -110,6 +220,29 @@ header nav a.activo {
 .contenedor-titulo-controles h3 {
 	color: #fff;
 	font-size: 30px;
+}
+
+.estadisticas  {
+	color: #fff;
+}
+
+.estadisticas h3 {
+	font-size: 30px;
+}
+
+.estadisticas h4 {
+	font-size: 24px;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+
+.estadisticas h5 {
+	font-size: 15px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.estadisticas ul {
+	font-size: 14px;
 }
 
 .contenedor-titulo-controles .indicadores button {
@@ -195,6 +328,12 @@ header nav a.activo {
 	width: 100%;
 	vertical-align: top;
 }
+
+.red-social {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
